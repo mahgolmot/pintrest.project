@@ -1,0 +1,18 @@
+{
+  "movies": [
+    {
+      "id": 1,
+      "title": "Z Nation",
+      "rate": "6.7 / 10",
+      "img": "",
+      "imgHover": "/images/slide1-1.avif"
+    },
+    {
+      "id": 2,
+      "title": "Another Movie",
+      "rate": "8.2 / 10",
+      "img": "/images/slide2.avif",
+      "imgHover": "/images/slide2-1.jpg"
+    }
+  ]
+}

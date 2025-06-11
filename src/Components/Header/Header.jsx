@@ -37,14 +37,14 @@ export default function Header() {
 
   return (
     <header
-      className="py-12 relative bg-cover b bg-no-repeat transition-all duration-1000"
+      className=" relative bg-cover  bg-no-repeat transition-all duration-1000 pb-8  md:py-8"
       style={{
-        backgroundImage: `url(${backgroundImage})`,
+        backgroundImage: ` linear-gradient(to bottom,rgb(30 41 59 /100%),rgb(30 41 59 /50%),rgb(30 41 59 /20%)), url(${backgroundImage})`,
       }}
     >
-      <div className="absolute inset-0 bg-black bg-opacity-50"></div>
-      <div className="container relative z-10">
-        <Navigation />
+      <Navigation />
+      {/* <div className="absolute inset-0 bg-black bg-opacity-50"></div> */}
+      <div className="container relative z-10  ">
         <SearchBox />
         <FollowUs />
         <HeaderSlider onSlideHover={handleSlideHover} />

@@ -57,6 +57,50 @@ import img6 from "../../Media/slide6.avif";
 import img66 from "../../Media/slide6-1.jpg";
 import { Autoplay } from "swiper/modules";
 
+const movieData = [
+  {
+    Id: 1,
+    img: img1,
+    imgHover: img11,
+    title: "Z Nation",
+    rate: "6.7 / 10",
+  },
+  {
+    Id: 2,
+    img: img2,
+    imgHover: img22,
+    title: "Burb Patrol",
+    rate: "6 / 10",
+  },
+  {
+    Id: 3,
+    img: img3,
+    imgHover: img33,
+    title: "Wise Guy",
+    rate: "8.2 / 10",
+  },
+  {
+    Id: 4,
+    img: img4,
+    imgHover: img44,
+    title: "Ghost Show",
+    rate: "7.1 / 10",
+  },
+  {
+    Id: 5,
+    img: img5,
+    imgHover: img55,
+    title: "HighWay To Heaven",
+    rate: "6.9 / 10",
+  },
+  {
+    Id: 6,
+    img: img6,
+    imgHover: img66,
+    title: "The Dresden Files",
+    rate: "7.6 / 10",
+  },
+];
 export default function HeaderSlider({ onSlideHover }) {
   const [activeSlide, setActiveSlide] = useState(null);
 
@@ -73,22 +117,59 @@ export default function HeaderSlider({ onSlideHover }) {
   return (
     <div className="mt-8">
       <Swiper
+        breakpoints={{
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+          },
+          1024: {
+            slidesPerView: 4,
+            spaceBetween: 40,
+          },
+        }}
         modules={[Autoplay]}
-        spaceBetween={20}
-        slidesPerView={5}
+        spaceBetween={0}
+        slidesPerView={1}
         autoplay={{ delay: 2000 }}
         loop
       >
-        <SwiperSlide>
-          <img
-            className="w-full cursor-pointer"
-            src={img1}
-            alt=""
-            onMouseEnter={() => handleSlideHover(img11)}
-            onMouseLeave={handleSlideLeave}
-          />
-        </SwiperSlide>
-        <SwiperSlide>
+        {movieData.map((elem, index) => {
+          return (
+            <SwiperSlide key={index}>
+              <img
+                className="w-full cursor-pointer relative bg-center bg-cover h-full  object-cover sm:object-center md:object-left  "
+                src={elem.img}
+                alt=""
+                onMouseEnter={() => handleSlideHover(elem.imgHover)}
+                onMouseLeave={handleSlideLeave}
+              />
+              <div className="absolute bottom-0 text-nowrap left-0 p-8 flex flex-col  justify-end">
+                <h1 className=" text-xl">{elem.title}</h1>
+                <div className="flex mt-2 gap-2 ">
+                  <span className="text-yellow-400">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      className="bi bi-star-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                    </svg>
+                  </span>
+                  <span>{elem.rate}</span>
+                </div>
+              </div>
+            </SwiperSlide>
+          );
+        })}
+
+        {/* <SwiperSlide>
           <img
             className="w-full cursor-pointer"
             src={img2}
@@ -133,7 +214,7 @@ export default function HeaderSlider({ onSlideHover }) {
             onMouseLeave={handleSlideLeave}
           />
         </SwiperSlide>
-        {/* بقیه اسلایدها به همین شکل */}
+        */}
       </Swiper>
     </div>
   );
