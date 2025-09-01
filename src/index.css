@@ -6,3 +6,11 @@
 body {
   font-family: "Inter", sans-serif;
 }
+
+@layer utilities {
+  .placeholder-custom::placeholder {
+    color: #151515c8;
+    opacity: 1;
+    font-size: 13px;
+  }
+}
