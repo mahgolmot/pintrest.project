@@ -3,134 +3,156 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pintrest</title>
+    <meta name="description" content="Discover new ideas, save inspirations, and explore creative content on Pinterest.">
+   
+    <meta name="author" content="Mahgol">
+    <meta property="og:title" content="Pinterest - Get Inspired & Save Ideas">
+    <meta property="og:description" content="Discover new ideas, save inspirations, and explore creative content.">
+    <meta property="og:image" content="https://res.cloudinary.com/dxqm2evux/image/upload/v1756765432/logo_tpjb5k.png">
+    <meta property="og:url" content="http://127.0.0.1:5500/index.html">
+    <meta property="og:type" content="website">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Pinterest - Get Inspired & Save Ideas">
+    <meta name="twitter:description" content="Explore creative ideas and save your favorites.">
+    <meta name="twitter:image" content="https://res.cloudinary.com/dxqm2evux/image/upload/v1756765432/logo_tpjb5k.png">
+    <meta name="robots" content="index,follow">
+
+    <link rel="icon" href="https://res.cloudinary.com/dxqm2evux/image/upload/v1756765432/logo_tpjb5k.png" type="image/png">
+
+    <title>Pinterest — Get Inspired & Save Ideas</title>
   </head>
   <body>
+
     <!-- header -->
-    <div class="header">
+    <header class="header">
       <div class="header1">
-        <img src="https://res.cloudinary.com/dxqm2evux/image/upload/v1756765432/logo_tpjb5k.png" alt="" />
-        <a href="#">Pintrest</a>
-        <button>Explore</button>
+        <a href="/" aria-label="Pinterest homepage">
+        <img src="https://res.cloudinary.com/dxqm2evux/image/upload/v1756765432/logo_tpjb5k.png" alt="Pinterest Logo" />
+        </a>
+        <a href="/" aria-label="Pinterest homepage">Pinterest</a>
+        <button type="button">Explore</button>
       </div>
 
       <div class="header2">
-        <div class="list">
+        <nav class="list">
           <ul>
-            <li><a href="#">َAbout</a></li>
+            <li><a href="#">About</a></li>
             <li><a href="#">Businesses</a></li>
             <li><a href="#">Create</a></li>
             <li><a href="#">News</a></li>
           </ul>
-        </div>
-        <button class="hLoginBtn redbtn">Log in</button>
-        <button class="hSignupBtn">Sign up</button>
+        </nav>
+        <button type="button" class="hLoginBtn redbtn">Log in</button>
+        <button type="button" class="hSignupBtn">Sign up</button>
       </div>
-    </div>
+    </header>
     <!-- header -->
      
     <!-- Login Page -->
-    <div class="loginPage">
-      <p>Log in to get ideas</p>
+     <main>
+    <section class="loginPage">
+      <h1>Log in to get ideas</h1>
 
-      <form class="formLogin">
-        <img src="https://res.cloudinary.com/dxqm2evux/image/upload/v1756765432/logo_tpjb5k.png" alt="" />
-        <p>Welcome to Pinterest</p>
+      <form action="/login" method="post" class="formLogin">
+        <img src="https://res.cloudinary.com/dxqm2evux/image/upload/v1756765432/logo_tpjb5k.png" alt="Pinterest Logo" />
+        <h2>Welcome to Pinterest</h2>
 
-        <label for="">Email</label>
-        <input type="email" placeholder="Email" />
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" placeholder="Email" autocomplete="email" required/>
 
-        <label for="">Password</label>
-        <input type="password" placeholder="Password" />
+        <label for="password">Password</label>
+        <input id="password" name="password" type="password" placeholder="Password" autocomplete="current-password" required />
 
-        <a href="#">Forgot you password?</a>
+        <a href="#">Forgot your password?</a>
 
-        <button class="loginPageBtn">Log in</button>
+        <button type="submit" class="loginPageBtn">Log in</button>
 
         <p>OR</p>
 
-        <button class="logInGoogle">Continue By Google</button>
-        <button class="logInQr">Use QR code</button>
+        <button type="button" class="logInGoogle">Continue By Google</button>
+        <button type="button" class="logInQr">Use QR code</button>
 
         <p>
-          By continuing, you agree to Pintrest`s
-          <span>Terms of Service </span> and acknowledge you`ve read our
-          <span>Privacy policy . Notice at collecton</span>
+          By continuing, you agree to Pinterest`s
+          <a href="/tos">Terms of Service </a> and acknowledge you`ve read our
+          <a href="/privacy">Privacy policy . Notice at collecton</a>
         </p>
       </form>
-    </div>
+    </section>
     <!-- Login Page -->
 
     <!-- Inspitation -->
-    <div class="inspirationPages">
-      <p>Get your next</p>
-      <p>green thumb idea</p>
-    </div>
+    <section class="inspirationPages">
+      <h2>Get your next <span> green thumb idea</span> </h2>
+     
+    </section>
     <!-- Inspitation -->
 
     <!-- Search -->
-    <div class="searchPages">
+    <section class="searchPages">
       <div class="searchPagesSec1"></div>
 
       <div class="searchPagesSec2">
-        <p>Search for an idea</p>
-        <p>
+        <h2>Search for an idea</h2>
+        <h3>
           What do you want to try next? Think of something you’re into—like
           “easy chicken dinner”—and see what you find.
-        </p>
+        </h3>
 
-        <button class="exploreBtn redBtn">Explore</button>
+        <button type="button" class="exploreBtn redBtn"  >Explore</button>
         
     </div>
+    </section>
     <!-- Search -->
 
 
     <!-- save ideas page -->
-     <div class="saveIdeasPage">
+     <section class="saveIdeasPage">
       <div class="saveDetail">
-        <p>Save ideas you like</p>
-        <p>Collect your favorites so you can get back to them later.</p>
-        <button class="exploreBtn redbtn">Explore</button>
+        <h2>Save ideas you like</h2>
+        <h3>Collect your favorites so you can get back to them later.</h3>
+        <button type="button" class="exploreBtn redbtn"  >Explore</button>
       </div>
    <div class="saveCollection">
     <div class="colList1">
     <div class="col1">
-      <p>Fern future home vibes</p>
+      <h2>Fern future home vibes</h2>
       <div class="colImg">
-        <img src="https://res.cloudinary.com/dxqm2evux/image/upload/v1756765419/colImg1_cooet4.png" alt="">
-        <img src="https://res.cloudinary.com/dxqm2evux/image/upload/v1756765429/img5_akhmsq.jpg" alt="">
-        <img src="https://res.cloudinary.com/dxqm2evux/image/upload/v1756765420/colImg3_v7serb.png" alt="">
+        <img src="https://res.cloudinary.com/dxqm2evux/image/upload/v1756765419/colImg1_cooet4.png" alt="Bed in a room">
+        <img src="https://res.cloudinary.com/dxqm2evux/image/upload/v1756765429/img5_akhmsq.jpg" alt="Flowers and green plants at home">
+        <img src="https://res.cloudinary.com/dxqm2evux/image/upload/v1756765420/colImg3_v7serb.png" alt="Double sofa in a bright house">
       </div>
     </div>
       <div class="col2">
-      <p>Serve my drinks in style</p>
+      <h2>Serve my drinks in style</h2>
     </div>
     </div>
     <div class="colList2">
     <div class="col3">
-      <p>My Scandinavian bedroom</p>
+      <h3>My Scandinavian bedroom</h3>
     </div>
       <div class="col4">
-      <p>The deck of my dreams</p>
+      <h3>The deck of my dreams</h3>
     </div>
       <div class="col5">
-      <p>Our bathroom</p>
+      <h3>Our bathroom</h3>
     </div>
    </div>
      </div>
     <!-- save ideas page -->
 <!-- shop -->
- <div class="shopPage">
+ <section class="shopPage">
   <div class="shopSect1">
     <div class="img1">
-      <img src="https://res.cloudinary.com/dxqm2evux/image/upload/v1756765473/shop_bmhbii.png" alt="">
+      <img src="https://res.cloudinary.com/dxqm2evux/image/upload/v1756765473/shop_bmhbii.png" alt="A girl who is smiling" loading="lazy">
     </div>
     <div class="img2">
-      <img src="https://res.cloudinary.com/dxqm2evux/image/upload/v1756765479/shopStory_lvfemq.png" alt="">
+      <img src="https://res.cloudinary.com/dxqm2evux/image/upload/v1756765479/shopStory_lvfemq.png" alt="A photo of a girl" loading="lazy">
 
     </div>
     <div class="img3">
-      <img src="https://res.cloudinary.com/dxqm2evux/image/upload/v1756765430/shopAvator_ssyii3.png" alt="">
+      <img src="https://res.cloudinary.com/dxqm2evux/image/upload/v1756765430/shopAvator_ssyii3.png" alt="A girl standing" loading="lazy">
     </div>
     <div class="text">
       <p>Scout the City</p>
@@ -138,38 +160,33 @@
     </div>
   </div>
   <div class="shopSect2">
-    <p>See it,make it,try it, do it</p>
-    <p>The best part of Pinterest is discovering new things and ideas from people around the world</p>
+    <h2>See it, make it, try it, do it</h2>
+    <h3>The best part of Pinterest is discovering new things and ideas from people around the world</h3>
   
-    <button class="exploreBtn redbtn">Explore</button>
+    <button type="button" class="exploreBtn redbtn"  >Explore</button>
   </div>
- </div>
+ </section>
+  </main>
+
  <!-- shop -->
   <!-- footer -->
-   <div class="footer">
+   <footer class="footer">
+    <nav>
     <ul>
-      <li><a href="#">Terms of Service</a></li>
-      <li><a href="#">Privacy Policy</a></li>
-      <li><a href="#">Help</a></li>
-      <li><a href="#">Iphone App</a></li>
-      <li><a href="#">Android App</a></li>
-      <li><a href="#">Users</a></li>
-      <li><a href="#">Collections</a></li>
-      <li><a href="#">Shopping</a></li>
-      <li><a href="#">Explore</a></li>
-    
-      <li><a href="#">Shop</a></li>
-      <li><a href="#">Non-User Notice</a></li>  
+      <li><a href="/tos">Terms of Service</a></li>
+      <li><a href="/privacy">Privacy Policy</a></li>
+      <li><a href="/help">Help</a></li>
+      <li><a href="/iphoneApp">Iphone App</a></li>
+      <li><a href="/androidApp">Android App</a></li>
+      <li><a href="/users">Users</a></li>
+      <li><a href="/collections">Collections</a></li>
+      <li><a href="/shopping">Shopping</a></li>
+      <li><a href="/explore">Explore</a></li>
+      <li><a href="/shop">Shop</a></li>
+      <li><a href="/nsn">Non-User Notice</a></li>  
     </ul>
-   </div>
+    </nav>
+   </footer>
    <!-- footer -->
   </body>
 </html>
-
-
-
-
-
-
-
-
