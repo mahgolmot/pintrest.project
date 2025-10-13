@@ -219,3 +219,22 @@
   text-decoration: underline;
 }
 /* login page */
+/* inspiration pages */
+.inspiration_pages {
+  background-color: rgb(255, 255, 255);
+  height: 98vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.inspiration_pages h2 {
+  width: 600px;
+  font-size: 60px;
+  color: #211922;
+}
+
+.inspiration_pages h2 span {
+  color: #407a57;
+}
+/* inspiration pages */
