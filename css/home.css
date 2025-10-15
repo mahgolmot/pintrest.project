@@ -313,7 +313,7 @@
   z-index: 6;
 }
 .search_section2 {
-  color: #c92e58;
+  color: #c31952;
   width: 40vw;
   display: flex;
   flex-direction: column;
@@ -326,12 +326,139 @@
   font-size: 60px;
 }
 .search_section2 h3 {
-  width: 480px;
+  width: 485px;
+  text-align: center;
   font-size: 26px;
-  font-weight: 400;
+  font-weight: 500;
 }
 .explore_btn {
   margin: 0 auto;
   width: 100px;
 }
 /* search page */
+
+/* save page */
+
+.save_page {
+  background-color: #dafff6;
+  display: flex;
+  height: 100vh;
+  padding: 5px;
+}
+.save_page_details {
+  color: #006b6c;
+  margin-left: 70px;
+}
+.save_collection {
+  width: 50vw;
+  margin-left: 50px;
+  position: relative;
+}
+.save_collection1 {
+  background: url(https://res.cloudinary.com/dxqm2evux/image/upload/v1760433800/future-home-vibes_yuuqui.png)
+    center center no-repeat;
+  background-size: cover;
+  width: 440px;
+  height: 480px;
+  border-radius: 80px;
+  padding-top: 170px;
+  position: absolute;
+  left: 50px;
+}
+.save_collection1 h2 {
+  font-size: 56px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  color: white;
+  font-weight: 600;
+}
+.collection_img {
+  margin: 12px 50px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+.collection_img img {
+  width: 100px;
+}
+.save_collection2 {
+  background: url(https://res.cloudinary.com/dxqm2evux/image/upload/v1760445014/serve-my-drinks_i8hkfe.png)
+    center center no-repeat;
+  background-size: cover;
+  width: 250px;
+  height: 250px;
+  border-radius: 60px;
+  position: absolute;
+  top: 520px;
+  left: 240px;
+}
+.save_collection2 h3 {
+  color: white;
+  width: 200px;
+  font-size: 30px;
+  font-weight: 600;
+  padding: 120px 0 0 30px;
+}
+
+.save_collection3 {
+  background: url(https://res.cloudinary.com/dxqm2evux/image/upload/v1760445013/scandinavian-bedroom_x4iuxj.png)
+    center center no-repeat;
+  background-size: cover;
+  width: 245px;
+  height: 268px;
+  position: absolute;
+  top: 10px;
+  right: 50px;
+  border-radius: 60px;
+}
+
+.save_collection3 h3 {
+  color: white;
+  width: 190px;
+  font-size: 27px;
+  font-weight: 600;
+  padding: 140px 0 0 30px;
+}
+
+.save_collection4 {
+  background: url(https://res.cloudinary.com/dxqm2evux/image/upload/v1760445015/deck-of-dreams_cr6akm.png)
+    center center no-repeat;
+  background-size: cover;
+  width: 190px;
+  height: 190px;
+  position: absolute;
+  top: 300px;
+  right: 120px;
+  border-radius: 40px;
+}
+
+.save_collection4 h3 {
+  color: white;
+  width: 170px;
+  font-size: 20px;
+  font-weight: 600;
+
+  padding: 120px 0 0 20px;
+}
+
+.save_collection5 {
+  background: url(https://res.cloudinary.com/dxqm2evux/image/upload/v1760445013/bathroom-upgrade_cbxlmg.png)
+    center center no-repeat;
+  background-size: cover;
+  width: 260px;
+  height: 270px;
+  position: absolute;
+  top: 520px;
+  right: 65px;
+  border-radius: 60px;
+}
+.save_collection5 h3 {
+  color: white;
+  width: 130px;
+  font-size: 30px;
+  font-weight: 600;
+  padding: 120px 0 0 30px;
+}
+/* save page */
