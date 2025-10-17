@@ -514,3 +514,24 @@
 }
 
 /* shop page */
+
+/* footer */
+
+.footer ul {
+  font-size: 12px;
+  padding: 14px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+}
+.footer a {
+  font-weight: 600;
+  color: #2b48d4;
+}
+.footer a:hover {
+  text-decoration: underline;
+  color: #354dc2;
+}
+/* footer */
