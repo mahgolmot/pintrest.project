@@ -58,7 +58,7 @@
 }
 
 .header_navbar_list a {
-  font-size: 17px;
+  font-size: 14px;
   color: #3750ca;
   font-weight: bold;
 }
@@ -68,11 +68,11 @@
 }
 
 .header_btn_log {
-  width: 82px;
-  height: 54px;
+  width: 80px;
+  height: 50px;
   border-radius: 18px;
   background-color: #f10d2f;
-  margin-left: 30px;
+  margin-left: 20px;
   color: white;
   font-weight: bolder;
   font-size: medium;
@@ -82,8 +82,8 @@
   background-color: var(--main-red);
 }
 .header_btn_sign {
-  width: 95px;
-  height: 54px;
+  width: 90px;
+  height: 50px;
   border-radius: 18px;
   background-color: #e5e5e0;
   font-size: medium;
@@ -100,6 +100,7 @@
 .login_page {
   background: url(https://res.cloudinary.com/dxqm2evux/image/upload/v1760281870/IMG_9301_lyumx5.jpg)
     center center no-repeat;
+  margin-top: 90px;
   height: 90vh;
   display: flex;
   flex-direction: row;
@@ -117,22 +118,22 @@
   width: 400px;
   z-index: 1;
   font-size: 70px;
-  margin-top: 270px;
+  margin-top: 230px;
   color: #ffffff;
 }
 .login_form {
   background-color: #ffffff;
-  padding: 0 100px;
+  padding: 0 80px;
   margin-top: 10px;
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 10px;
   border-radius: 32px;
   z-index: 100;
 }
 .form_logo {
   width: 40px;
-  margin: 25px auto 10px auto;
+  margin: 20px auto 5px auto;
   opacity: 0.5;
   transition: opacity 0.25s ease;
 }
@@ -141,21 +142,22 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-size: 31px;
+  font-size: 30px;
   letter-spacing: -1px;
   color: #353535;
 }
 .login_form label {
   width: 280px;
-  margin: 0 auto;
+  margin-left: 35px;
+  font-size: 14px;
 }
 .login_form input {
   margin: 0 auto;
-  width: 300px;
-  padding: 16px 13px;
+  width: 270px;
+  padding: 12px 13px;
   border-radius: 16px;
-  font-size: 17px;
-  border: 1px solid rgb(95, 95, 95);
+  font-size: 15px;
+  border: 1px solid rgba(95, 95, 95, 0.658);
 }
 .login_form input:focus {
   border-color: #354dc2;
@@ -166,8 +168,9 @@
 }
 .forgot_pass {
   width: 290px;
-  margin: 0 auto;
-  font-weight: 500;
+  font-size: 13px;
+  margin-left: 40px;
+  font-weight: 600;
   color: #354dc2;
 }
 .forgot_pass:hover {
@@ -175,15 +178,15 @@
 }
 
 .btn_login {
-  width: 300px;
+  width: 270px;
+  height: 35px;
   margin: 0 auto;
-  padding: 14px;
-
-  border-radius: 16px;
+  border-radius: 12px;
 }
 .login_form .or {
   margin: 0 auto;
   font-weight: bold;
+  font-size: 13px;
 }
 .btn_option_login {
   margin: 0 auto;
@@ -195,13 +198,16 @@
   gap: 40px;
   align-items: center;
   text-align: center;
-  width: 300px;
+  width: 270px;
   margin: 0 auto;
   padding: 10px;
   border-radius: 6px;
   border: 1px solid rgb(177, 175, 175);
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 500;
+}
+.btn svg {
+  width: 20px;
 }
 .btn:hover {
   background-color: lightgray;
@@ -217,7 +223,7 @@
   line-height: 25px;
 }
 .terms_of_serv a {
-  color: gray;
+  color: rgb(116, 115, 115);
   text-decoration: underline;
 }
 /* login page */
@@ -232,7 +238,7 @@
 }
 .inspiration_pages h2 {
   width: 600px;
-  font-size: 60px;
+  font-size: 50px;
   color: #211922;
 }
 
@@ -255,14 +261,14 @@
 }
 .search_img1 {
   position: absolute;
-  width: 200px;
+  width: 170px;
   top: 10px;
   left: 300px;
   z-index: 2;
 }
 .search_img2 {
   position: absolute;
-  width: 230px;
+  width: 200px;
   top: 180px;
   left: -100px;
   z-index: 3;
@@ -270,14 +276,14 @@
 
 .search_img3 {
   position: absolute;
-  width: 190px;
-  bottom: 100px;
+  width: 150px;
+  bottom: 50px;
   left: 300px;
   z-index: 1;
 }
 .search_img4 {
   position: absolute;
-  width: 320px;
+  width: 310px;
   top: 100px;
   left: 70px;
   z-index: 4;
@@ -288,8 +294,8 @@
   align-items: center;
   text-align: center;
   margin-top: 250px;
-  width: 350px;
-  padding: 60px 50px;
+  width: 310px;
+  padding: 50px 35px;
   border-radius: 60px;
   position: absolute;
   left: -10px;
@@ -303,8 +309,10 @@
   z-index: 5;
 }
 .search_box p {
+  text-align: center;
+  margin-left: 10px;
   color: #6e0f3c;
-  font-size: x-large;
+  font-size: 20px;
   font-weight: 700;
   position: absolute;
   z-index: 6;
@@ -325,12 +333,13 @@
   gap: 30px;
 }
 .search_section2 h2 {
-  font-size: 60px;
+  font-size: 55px;
 }
 .search_section2 h3 {
-  width: 485px;
+  width: 420px;
+  text-align: justify;
   text-align: center;
-  font-size: 26px;
+  font-size: 22px;
   font-weight: 500;
 }
 .explore_btn {
@@ -360,15 +369,15 @@
   background: url(https://res.cloudinary.com/dxqm2evux/image/upload/v1760433800/future-home-vibes_yuuqui.png)
     center center no-repeat;
   background-size: cover;
-  width: 440px;
-  height: 480px;
+  width: 400px;
+  height: 420px;
   border-radius: 80px;
-  padding-top: 170px;
+  padding-top: 130px;
   position: absolute;
-  left: 50px;
+  left: 40px;
 }
 .save_collection1 h2 {
-  font-size: 56px;
+  font-size: 50px;
   display: flex;
   justify-content: center;
   text-align: center;
@@ -393,8 +402,8 @@
   height: 250px;
   border-radius: 60px;
   position: absolute;
-  top: 520px;
-  left: 240px;
+  top: 450px;
+  left: 180px;
 }
 .save_collection2 h3 {
   color: white;
@@ -408,7 +417,7 @@
   background: url(https://res.cloudinary.com/dxqm2evux/image/upload/v1760445013/scandinavian-bedroom_x4iuxj.png)
     center center no-repeat;
   background-size: cover;
-  width: 245px;
+  width: 235px;
   height: 268px;
   position: absolute;
   top: 10px;
@@ -428,8 +437,8 @@
   background: url(https://res.cloudinary.com/dxqm2evux/image/upload/v1760445015/deck-of-dreams_cr6akm.png)
     center center no-repeat;
   background-size: cover;
-  width: 190px;
-  height: 190px;
+  width: 160px;
+  height: 160px;
   position: absolute;
   top: 300px;
   right: 120px;
@@ -438,21 +447,21 @@
 
 .save_collection4 h3 {
   color: white;
-  width: 170px;
-  font-size: 20px;
+  width: 150px;
+  font-size: 18px;
   font-weight: 600;
 
-  padding: 120px 0 0 20px;
+  padding: 100px 0 0 20px;
 }
 
 .save_collection5 {
   background: url(https://res.cloudinary.com/dxqm2evux/image/upload/v1760445013/bathroom-upgrade_cbxlmg.png)
     center center no-repeat;
   background-size: cover;
-  width: 260px;
-  height: 270px;
+  width: 210px;
+  height: 210px;
   position: absolute;
-  top: 520px;
+  top: 500px;
   right: 65px;
   border-radius: 60px;
 }
