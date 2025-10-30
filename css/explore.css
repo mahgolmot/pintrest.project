@@ -116,8 +116,8 @@
 .card {
   position: relative;
   border-radius: 30px;
-  width: 450px;
-  height: 340px;
+  width: 400px;
+  height: 300px;
   font-size: 20px;
   color: white;
   cursor: pointer;
@@ -162,7 +162,7 @@
   display: inline-block;
   width: 115px;
   height: 50px;
-  margin: 20px 780px;
+  margin: 20px 700px;
   padding: 15px 17px;
   background-color: #e5e5e0;
   border-radius: 16px;
@@ -178,11 +178,12 @@
 /*  Browse by category */
 
 .category_card {
+  flex-wrap: wrap;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  gap: 20px;
+  gap: 10px;
   margin-top: 20px;
 }
 .explore_category h2 {
@@ -204,6 +205,7 @@
   text-align: center;
   align-items: center;
   justify-content: center;
+  background-color: #111;
 }
 
 .category_img2 {
@@ -259,26 +261,298 @@
     center no-repeat;
   background-size: cover;
 }
-.images::before {
-  content: "";
+/*  Browse by category */
+
+/* new on Pinterest */
+
+.explore_new h2 {
+  margin-top: 50px;
+  margin-left: 150px;
+  font-size: 27px;
+  margin-bottom: 20px;
+}
+.explore_posts {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  position: relative;
+}
+
+.post {
+  overflow: hidden;
+  width: 240px;
+  height: 700px;
+  position: relative;
+}
+.image_wrapper {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 16px;
+}
+
+.image_wrapper img {
+  width: 100%;
+  display: block;
+  border-radius: 16px;
+}
+
+.overlay {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  transition: opacity 0.3s ease;
   border-radius: 16px;
-  background-color: rgba(23, 23, 23, 0.301);
-  z-index: 1;
+  cursor: pointer;
 }
 
-.images:hover::before {
-  background-color: rgba(0, 0, 0, 0.411);
+.image_wrapper:hover .overlay {
+  opacity: 1;
 }
-.images h3 {
-  position: relative;
+.open {
   color: white;
-  font-size: 20px;
-  font-weight: 600;
+  font-size: 18px;
+  font-weight: 700;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 40%;
+}
+.download_btn {
+  position: absolute;
+  bottom: 13px;
+  right: 15px;
+  background-color: white;
+  padding: 3px 4px;
+  border-radius: 8px;
+}
+.download_btn svg {
+  width: 18px;
+  height: 18px;
+}
+.visit_site {
+  background-color: #ffffff;
+  border: none;
+  border-radius: 13px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 5px;
+  padding: 7px 10px;
+  position: absolute;
+  bottom: 13px;
+  left: 10px;
+  cursor: pointer;
+}
+.visit_site svg {
+  width: 16px;
+}
+.visit_site p {
+  font-size: 14px;
+}
+.post img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 16px;
+}
+
+.new_post1 img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.new_post6 {
+  position: absolute;
+  top: -235px;
+  left: 120px;
+}
+.new_post7 {
+  position: absolute;
+  top: -145px;
+  left: 25%;
+}
+.new_post8 {
+  position: absolute;
+  top: -190px;
+  left: 42%;
+}
+.new_post9 {
+  position: absolute;
+  top: -270px;
+  left: 59%;
+}
+.new_post10 {
+  position: absolute;
+  top: -130px;
+  right: 130px;
+}
+
+.new_post11 {
+  position: absolute;
+  top: 270px;
+  left: 120px;
+}
+.new_post12 {
+  position: absolute;
+  top: 470px;
+  left: 25%;
+}
+.new_post13 {
+  position: absolute;
+  top: 355px;
+  left: 42%;
+}
+.new_post14 {
+  position: absolute;
+  top: 150px;
+  left: 59%;
+}
+.new_post15 {
+  position: absolute;
+  top: 330px;
+  right: 130px;
+}
+
+.new_post16 {
+  position: absolute;
+  top: 800px;
+  left: 120px;
+}
+.new_post17 {
+  position: absolute;
+  top: 965px;
+  left: 25%;
+}
+.new_post18 {
+  position: absolute;
+  top: 880px;
+  left: 42%;
+}
+.new_post19 {
+  position: absolute;
+  top: 710px;
+  left: 59%;
+}
+.new_post20 {
+  position: absolute;
+  top: 850px;
+  right: 130px;
+}
+
+.tag-bar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 8px 25px 8px 0;
+}
+
+.tags {
+  display: flex;
+  gap: 6px;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+.tags::-webkit-scrollbar {
+  display: none;
+}
+
+.tags a {
+  flex-shrink: 0;
+  background: #e5e5e0;
+  color: #111;
+  font-weight: 700;
+  padding: 5px 10px;
+  font-size: 12px;
+  border-radius: 16px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.tags a:hover {
+  color: #5f5f5f;
+  text-decoration: underline;
+}
+
+.arrow {
+  position: absolute;
+  right: 6px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #5c5b5b;
+  z-index: 3;
+  width: 20px;
+  font-weight: 200;
+  border-radius: 50%;
+}
+
+.fade-right {
+  position: absolute;
+  right: 10px;
+  top: 2px;
+  height: 30px;
+  width: 60px;
+  pointer-events: none;
+  background: linear-gradient(to left, #ffffff 40%, rgba(255, 255, 255, 0));
   z-index: 2;
 }
-/*  Browse by category */
+.post_description {
+  cursor: pointer;
+  position: relative;
+  padding-right: 40px;
+}
+
+.post_description p {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 0;
+  position: relative;
+  padding-right: 30px;
+  font-size: 13px;
+  font-weight: 600;
+}
+.post_description span {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-top: 6px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.more-action {
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  position: absolute;
+  top: 2px;
+  right: 14px;
+  background: transparent;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  line-height: 1;
+  color: #070707;
+}
+
+.more-action:hover {
+  background-color: #d6d6d47a;
+}
+
+/* new on Pinterest */
