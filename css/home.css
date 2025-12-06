@@ -405,8 +405,8 @@
 
   .btn_login {
     width: 270px;
-    height: 35px;
     margin: 0 auto;
+    padding: 10px;
     border-radius: 12px;
   }
   .login_form .or {
