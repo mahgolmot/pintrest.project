@@ -666,7 +666,7 @@
 }
 /* mobile-header */
 
-/* fave ideas section */
+/* mobile fave ideas section */
 .home_mobile_fave_ideas {
   display: flex;
   justify-content: center;
@@ -713,4 +713,19 @@
   border-radius: 12px;
   margin-bottom: 70px;
 }
-/* fave ideas section */
+/* mobile fave ideas section */
+
+/* mobile sign up */
+.home_mobile_signup2 {
+  padding-top: 250px;
+}
+.home_mobile_signup2 .terms_of_serv {
+  margin-top: 2px;
+}
+.download_appstore {
+  padding-bottom: 150px;
+}
+.download_appstore img {
+  width: 140px;
+  height: 50px;
+} /* mobile sign up */
