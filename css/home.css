@@ -728,4 +728,36 @@
 .download_appstore img {
   width: 140px;
   height: 50px;
-} /* mobile sign up */
+}
+/* mobile sign up */
+/* mobile footer */
+.mobile_footer {
+  background-color: black;
+  color: white;
+  padding: 25px;
+  font-size: 14px;
+  font-weight: 600;
+}
+.mobile_footer a {
+  color: white;
+}
+.logo_footer {
+  margin-bottom: 20px;
+}
+
+.first_section_footer {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  margin-bottom: 30px;
+}
+.footer_links p {
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+.footer_links ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+/* mobile footer */
