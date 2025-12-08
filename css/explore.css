@@ -158,6 +158,115 @@
 }
 /* explore for Pinterest mobile */
 
+/*  Browse by category */
+.hidden {
+  display: none !important;
+}
+.category_card {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+.explore_category h2 {
+  margin-top: 30px;
+  margin-left: 20px;
+  font-size: 14px;
+}
+
+.images {
+  width: 170px;
+  height: 82px;
+  border-radius: 16px;
+  position: relative;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+.images::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+  background-color: rgba(23, 23, 23, 0.415);
+  z-index: 1;
+}
+.images h3 {
+  position: relative;
+  font-size: 14px;
+  z-index: 2;
+}
+.images:hover::before {
+  background-color: rgba(0, 0, 0, 0.568);
+}
+.category_img1 {
+  background: url("https://res.cloudinary.com/dxqm2evux/image/upload/v1759052882/dog_hqhany.png")
+    center no-repeat;
+  background-size: cover;
+}
+
+.category_img2 {
+  background: url("https://res.cloudinary.com/dxqm2evux/image/upload/v1759052880/art_woy1ej.png")
+    center no-repeat;
+  background-size: cover;
+}
+
+.category_img3 {
+  background: url("https://res.cloudinary.com/dxqm2evux/image/upload/v1759052873/beauty_b1sofd.png")
+    center no-repeat;
+  background-size: cover;
+}
+
+.category_img4 {
+  background: url("https://res.cloudinary.com/dxqm2evux/image/upload/v1759052870/design_df3put.png")
+    center no-repeat;
+  background-size: cover;
+}
+
+.category_img5 {
+  background: url("https://res.cloudinary.com/dxqm2evux/image/upload/v1759052882/crafts_hu1nsv.png")
+    center no-repeat;
+  background-size: cover;
+}
+
+.category_img6 {
+  background: url("https://res.cloudinary.com/dxqm2evux/image/upload/v1759052880/food_kzqgx2.png")
+    center no-repeat;
+  background-size: cover;
+}
+
+.category_img7 {
+  background: url("https://res.cloudinary.com/dxqm2evux/image/upload/v1759052876/decor_ojiybo.png")
+    center no-repeat;
+  background-size: cover;
+}
+
+.category_img8 {
+  background: url("https://res.cloudinary.com/dxqm2evux/image/upload/v1759052874/fashion_ke3nfs.png")
+    center no-repeat;
+  background-size: cover;
+}
+
+.category_img9 {
+  background: url("https://res.cloudinary.com/dxqm2evux/image/upload/v1759052873/quotes_pwz0na.png")
+    center no-repeat;
+  background-size: cover;
+}
+
+.category_img10 {
+  background: url("https://res.cloudinary.com/dxqm2evux/image/upload/v1759052873/tattoos_tqvoq9.png")
+    center no-repeat;
+  background-size: cover;
+}
+/*  Browse by category */
 /* mobile */
 
 @media (min-width: 768px) {
