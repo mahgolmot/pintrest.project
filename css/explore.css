@@ -417,6 +417,31 @@
   outline: 2px solid #868686;
   outline-offset: 2px;
 }
+/* footer mobile */
+.footer_mobile {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  text-align: center;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  bottom: 0;
+  z-index: 1000;
+}
+.footer_mobile svg {
+  width: 24px;
+  height: 24px;
+}
+.footer_svg2 {
+  color: rgb(120, 120, 120);
+}
+.footer_svg3 {
+  color: rgb(120, 120, 120);
+}
+/* footer mobile */
 
 /* mobile */
 
