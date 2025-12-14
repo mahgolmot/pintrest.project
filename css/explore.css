@@ -1,5 +1,7 @@
 /* mobile */
-
+.desktop-explore {
+  display: none !important;
+}
 /* header mobile */
 .header_mobile_explore {
   width: 100%;
@@ -445,9 +447,15 @@
 
 /* mobile */
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   /* Header */
 
+  .desktop-explore {
+    display: block !important;
+  }
+  .header_mobile_explore {
+    display: none;
+  }
   .header_searchBox {
     position: relative;
     flex: 1;
@@ -495,8 +503,116 @@
 
   /* header */
 
-  /* explore for Pinterest */
+  /* explore for Pinterest  mobile */
+  .explore_best {
+    width: 100%;
+    margin-top: 62px;
+    padding-top: 20px;
+  }
+  .explore_btn {
+    display: none;
+  }
 
+  .explore_best h2 {
+    margin-top: 30px;
+    padding-left: 150px;
+    font-size: 35px;
+  }
+  .explore_images {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 8px;
+    margin-top: 35px;
+  }
+  .explore_card1 {
+    background: url(https://res.cloudinary.com/dxqm2evux/image/upload/v1761476271/pasta_uy394n.jpg)
+      center no-repeat;
+    background-size: cover;
+  }
+  .explore_card2 {
+    background: url(https://res.cloudinary.com/dxqm2evux/image/upload/v1759044837/Eleganze_slp9mf.jpg)
+      center no-repeat;
+    background-size: cover;
+  }
+
+  .explore_card3 {
+    background: url(https://res.cloudinary.com/dxqm2evux/image/upload/v1759044821/toastFood_qil6pd.jpg)
+      center no-repeat;
+    background-size: cover;
+    display: block !important;
+  }
+  .card {
+    position: relative;
+    border-radius: 30px;
+    width: 416px;
+    height: 300px;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    padding-bottom: 20px;
+    overflow: hidden;
+  }
+
+  .card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 32px;
+    background-color: rgba(23, 23, 23, 0.479);
+    z-index: 1;
+  }
+
+  .card:hover::before {
+    background-color: rgba(0, 0, 0, 0.411);
+  }
+  .card p {
+    font-size: 16px;
+  }
+  .card h3 {
+    margin: 0 auto;
+    font-size: 28px;
+    width: 300px;
+  }
+  .card p,
+  .card h3 {
+    position: relative;
+    z-index: 2;
+  }
+  .seemore_btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .seemore_btn a {
+    display: inline-block;
+    width: 115px;
+    height: 50px;
+    padding: 15px 17px;
+    margin: 20px 0;
+    background-color: #e5e5e0;
+    border-radius: 16px;
+    font-weight: 600;
+    color: black;
+    text-align: center;
+  }
+  .seemore_btn a:hover {
+    background-color: #d6d6d4;
+  }
+  /* explore for Pinterest mobile */
+  /* explore for Pinterest */
+  /* 
   .explore_best h2 {
     margin-top: 100px;
     margin-left: 150px;
@@ -585,7 +701,7 @@
   }
   .seemore_btn:hover {
     background-color: #d6d6d4;
-  }
+  } */
   /* explore for Pinterest */
 
   /*  Browse by category */
@@ -1086,7 +1202,3 @@
   }
 }
 /* new on Pinterest */
-
-.desktop-explore {
-  display: none;
-}
