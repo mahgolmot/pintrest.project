@@ -3,164 +3,611 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pintrest</title>
+    <meta
+      name="description"
+      content="Discover new ideas, save inspirations, and explore creative content on Pinterest."
+    />
+
+    <meta name="author" content="Mahgol" />
+    <meta property="og:title" content="Pinterest - Get Inspired & Save Ideas" />
+    <meta
+      property="og:description"
+      content="Discover new ideas, save inspirations, and explore creative content."
+    />
+    <meta
+      property="og:image"
+      content="https://res.cloudinary.com/dxqm2evux/image/upload/v1756765432/logo_tpjb5k.png"
+    />
+    <meta property="og:url" content="http://127.0.0.1:5500/index.html" />
+    <meta property="og:type" content="website" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Pinterest - Get Inspired & Save Ideas"
+    />
+    <meta
+      name="twitter:description"
+      content="Explore creative ideas and save your favorites."
+    />
+    <meta
+      name="twitter:image"
+      content="https://res.cloudinary.com/dxqm2evux/image/upload/v1756765432/logo_tpjb5k.png"
+    />
+    <meta name="robots" content="index,follow" />
+
+    <link
+      rel="icon"
+      href="https://res.cloudinary.com/dxqm2evux/image/upload/v1756765432/logo_tpjb5k.png"
+      type="image/png"
+    />
+    <link rel="stylesheet" href="./css/global.css" />
+    <link rel="stylesheet" href="./css/home.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Pinterest — Get Inspired & Save Ideas</title>
   </head>
   <body>
     <!-- header -->
-    <div class="header">
-      <div class="header1">
-        <img src="./media/logo.png" alt="" />
-        <a href="#">Pintrest</a>
-        <button>Explore</button>
-      </div>
-
-      <div class="header2">
-        <div class="list">
-          <ul>
-            <li><a href="#">َAbout</a></li>
-            <li><a href="#">Businesses</a></li>
-            <li><a href="#">Create</a></li>
-            <li><a href="#">News</a></li>
-          </ul>
+    <div class="home_desktop">
+      <header class="home_header">
+        <div class="header_logo">
+          <a class="header_logo__link" href="/" aria-label="Pinterest homepage">
+            <img
+              class="header_logo__img"
+              src="https://res.cloudinary.com/dxqm2evux/image/upload/v1756765432/logo_tpjb5k.png"
+              alt="Pinterest"
+            />
+          </a>
+          <a class="header_logo_navlink" href="/">Pinterest</a>
+          <a class="header_btn_explore" href="explore.html">Explore</a>
         </div>
-        <button class="hLoginBtn redbtn">Log in</button>
-        <button class="hSignupBtn">Sign up</button>
-      </div>
+
+        <div class="header_navbar">
+          <nav>
+            <ul class="header_navbar_list">
+              <li><a href="#">About</a></li>
+              <li><a href="#">Businesses</a></li>
+              <li><a href="#">Create</a></li>
+              <li><a href="#">News</a></li>
+            </ul>
+          </nav>
+          <button type="button" class="header_btn_log">Log in</button>
+          <button type="button" class="header_btn_sign">Sign up</button>
+        </div>
+      </header>
+      <!-- header -->
+
+      <!-- Login Page -->
+      <main class="home_main">
+        <section class="login_page">
+          <h1>Log in to get ideas</h1>
+
+          <form action="/login" method="post" class="login_form">
+            <img
+              class="form_logo"
+              src="https://res.cloudinary.com/dxqm2evux/image/upload/v1756765432/logo_tpjb5k.png"
+              alt="Pinterest Logo"
+            />
+            <h2>Welcome to <span>Pinterest</span></h2>
+
+            <label for="email">Email</label>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              placeholder="Email"
+              autocomplete="email"
+              required
+            />
+
+            <label for="password">Password</label>
+            <input
+              id="password"
+              name="password"
+              type="password"
+              placeholder="Password"
+              autocomplete="current-password"
+              required
+            />
+
+            <a class="forgot_pass" href="#">Forgot your password?</a>
+
+            <button type="submit" class="header_btn_log btn_login">
+              Log in
+            </button>
+
+            <p class="or">OR</p>
+
+            <div class="btn_option_login">
+              <a href="#" class="btn">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-chromium-icon lucide-chromium"
+                >
+                  <path d="M10.88 21.94 15.46 14" />
+                  <path d="M21.17 8H12" />
+                  <path d="M3.95 6.06 8.54 14" />
+                  <circle cx="12" cy="12" r="10" />
+                  <circle cx="12" cy="12" r="4" />
+                </svg>
+                <p>Continue By Google</p>
+              </a>
+            </div>
+
+            <div class="btn_option_login">
+              <a href="#" class="btn">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-qr-code-icon lucide-qr-code"
+                >
+                  <rect width="5" height="5" x="3" y="3" rx="1" />
+                  <rect width="5" height="5" x="16" y="3" rx="1" />
+                  <rect width="5" height="5" x="3" y="16" rx="1" />
+                  <path d="M21 16h-3a2 2 0 0 0-2 2v3" />
+                  <path d="M21 21v.01" />
+                  <path d="M12 7v3a2 2 0 0 1-2 2H7" />
+                  <path d="M3 12h.01" />
+                  <path d="M12 3h.01" />
+                  <path d="M12 16v.01" />
+                  <path d="M16 12h1" />
+                  <path d="M21 12v.01" />
+                  <path d="M12 21v-1" />
+                </svg>
+                <p>Use QR code</p>
+              </a>
+            </div>
+
+            <div class="terms_of_serv">
+              <p>
+                By continuing, you agree to Pinterest's
+                <a href="/tos">Terms of Service </a> and acknowledge you've read
+                our
+                <a href="/privacy">Privacy policy and Notice at Collection</a>
+              </p>
+            </div>
+          </form>
+        </section>
+        <!-- Login Page -->
+
+        <!-- Inspitation -->
+        <section class="inspiration_pages">
+          <h2>Get your next <span> green thumb idea</span></h2>
+        </section>
+        <!-- Inspitation -->
+
+        <!-- Search -->
+        <section class="search_pages">
+          <div class="search_section1">
+            <img
+              class="search_img1"
+              src="https://res.cloudinary.com/dxqm2evux/image/upload/v1760369312/food_topRight_bzp0vb.png"
+              alt="delicious healthy food"
+            />
+            <img
+              class="search_img2"
+              src="https://res.cloudinary.com/dxqm2evux/image/upload/v1760369309/food_left_tty6ch.png"
+              alt="delicious healthy food"
+            />
+            <img
+              class="search_img3"
+              src="https://res.cloudinary.com/dxqm2evux/image/upload/v1760369313/food_right_kqfuwh.png"
+              alt="delicious healthy food"
+            />
+            <img
+              class="search_img4"
+              src="https://res.cloudinary.com/dxqm2evux/image/upload/v1760369319/food_center_ljdi55.png"
+              alt="delicious healthy food"
+            />
+            <div class="search_box">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-search-icon lucide-search"
+              >
+                <path d="m21 21-4.34-4.34" />
+                <circle cx="11" cy="11" r="8" />
+              </svg>
+              <p>easy chicken dinner</p>
+            </div>
+          </div>
+
+          <div class="search_section2">
+            <h2>Search for an idea</h2>
+            <h3>
+              What do you want to try next? Think of something you’re into—like
+              “easy chicken dinner”—and see what you find.
+            </h3>
+
+            <button type="button" class="explore_btn header_btn_log">
+              Explore
+            </button>
+          </div>
+        </section>
+        <!-- Search -->
+
+        <!-- save ideas page -->
+        <section class="save_page">
+          <div class="save_page_details search_section2">
+            <h2>Save ideas you like</h2>
+            <h3>Collect your favorites so you can get back to them later.</h3>
+            <button type="button" class="explore_btn header_btn_log">
+              Explore
+            </button>
+          </div>
+          <div class="save_collection">
+            <div class="colList1">
+              <div class="save_collection1">
+                <h2>Fern future home vibes</h2>
+                <div class="collection_img">
+                  <img
+                    src="https://res.cloudinary.com/dxqm2evux/image/upload/v1756765419/colImg1_cooet4.png"
+                    alt="Bed in a room"
+                  />
+                  <img
+                    src="https://res.cloudinary.com/dxqm2evux/image/upload/v1756765436/colImg2_aevacc.png"
+                    alt="Flowers and green plants at home"
+                  />
+                  <img
+                    src="https://res.cloudinary.com/dxqm2evux/image/upload/v1756765420/colImg3_v7serb.png"
+                    alt="Double sofa in a bright house"
+                  />
+                </div>
+              </div>
+              <div class="save_collection2">
+                <h3>Serve my drinks in style</h3>
+              </div>
+
+              <div class="save_collection3">
+                <h3>My Scandinavian bedroom</h3>
+              </div>
+              <div class="save_collection4">
+                <h3>The deck of my dreams</h3>
+              </div>
+              <div class="save_collection5">
+                <h3>Our bathroom</h3>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- save ideas page -->
+        <!-- shop -->
+        <section class="shop_page">
+          <div class="shop_section1">
+            <div class="shop_img1">
+              <img
+                src="https://res.cloudinary.com/dxqm2evux/image/upload/v1756765473/shop_bmhbii.png"
+                alt="A girl who is smiling and close her eyes"
+                loading="lazy"
+              />
+            </div>
+            <div class="shop_img2">
+              <img
+                src="https://res.cloudinary.com/dxqm2evux/image/upload/v1756765479/shopStory_lvfemq.png"
+                alt="A girl raising her hand"
+                loading="lazy"
+              />
+            </div>
+            <div class="shop_img3">
+              <img
+                src="https://res.cloudinary.com/dxqm2evux/image/upload/v1756765430/shopAvator_ssyii3.png"
+                alt="A girl standing"
+                loading="lazy"
+              />
+            </div>
+            <div class="text_img">
+              <p>Scout the City</p>
+              <p>56.7k followers</p>
+            </div>
+          </div>
+          <div class="shop_section2 search_section2">
+            <h2>See it, make it, try it, do it</h2>
+            <p>
+              The best part of Pinterest is discovering new things and ideas
+              from people around the world
+            </p>
+
+            <button type="button" class="explore_btn header_btn_log">
+              Explore
+            </button>
+          </div>
+        </section>
+      </main>
+
+      <!-- shop -->
+      <!-- footer -->
+      <footer class="footer">
+        <nav>
+          <ul>
+            <li><a href="/tos">Terms of Service</a></li>
+            <li><a href="/privacy">Privacy Policy</a></li>
+            <li><a href="/help">Help</a></li>
+            <li><a href="/iphoneApp">Iphone App</a></li>
+            <li><a href="/androidApp">Android App</a></li>
+            <li><a href="/users">Users</a></li>
+            <li><a href="/collections">Collections</a></li>
+            <li><a href="/shopping">Shopping</a></li>
+            <li><a href="/explore">Explore</a></li>
+            <li><a href="/shop">Shop</a></li>
+            <li><a href="/nsn">Non-User Notice</a></li>
+          </ul>
+        </nav>
+      </footer>
     </div>
-    <!-- header -->
-     
-    <!-- Login Page -->
-    <div class="loginPage">
-      <p>Log in to get ideas</p>
+    <!-- footer -->
 
-      <form class="formLogin">
-        <img src="./media/logo.png" alt="" />
-        <p>Welcome to Pinterest</p>
+    <!-- mobile -->
+    <!-- mobile-header -->
+    <div class="home_mobile">
+      <header class="home_mobile_header">
+        <form action="/signup" method="post" class="home_mobile_signup">
+          <img
+            src="https://res.cloudinary.com/dxqm2evux/image/upload/v1763982915/pinterest_lkvn9r.png"
+            alt="Pinterest Logo"
+          />
+          <h1>
+            Welcome to
+            <br />
+            Pinterest
+          </h1>
 
-        <label for="">Email</label>
-        <input type="email" placeholder="Email" />
+          <div class="home_mobile_btn_signup">
+            <a href="#" class="btn_signup email">
+              <p>Continue with email</p>
+            </a>
+          </div>
 
-        <label for="">Password</label>
-        <input type="password" placeholder="Password" />
+          <div class="home_mobile_btn_signup">
+            <a href="#" class="btn_signup">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-chromium-icon lucide-chromium"
+              >
+                <path d="M10.88 21.94 15.46 14" />
+                <path d="M21.17 8H12" />
+                <path d="M3.95 6.06 8.54 14" />
+                <circle cx="12" cy="12" r="10" />
+                <circle cx="12" cy="12" r="4" />
+              </svg>
+              <p>Continue with Google</p>
+            </a>
+          </div>
 
-        <a href="#">Forgot you password?</a>
+          <a href="#" class="options_register">Already member?Log in</a>
+          <br />
+          <a href="#" class="options_register start"
+            >Are you a business? Get a started here</a
+          >
 
-        <button class="loginPageBtn">Log in</button>
+          <div class="terms_of_serv">
+            <p>
+              By continuing, you agree to Pinterest's
+              <a href="/tos">Terms of Service </a> and acknowledge you've read
+              our
+              <a href="/privacy">Privacy policy and Notice at Collection</a>
+            </p>
+          </div>
+        </form>
+        <div class="home_mobile_how_works">
+          <p>Here’s how it works</p>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-chevron-down-icon lucide-chevron-down"
+          >
+            <path d="m6 9 6 6 6-6" />
+          </svg>
+        </div>
+      </header>
+      <!-- mobile-header -->
 
-        <p>OR</p>
+      <!-- mobile fave ideas section -->
+      <section class="home_mobile_fave_ideas">
+        <div class="home_mobile_fave_ideas_details">
+          <h2>Bring your favorite ideas to life</h2>
+          <p>
+            With Pinterest, you can unlock tools that spark your creativity and
+            help you find more inspiration.
+          </p>
+        </div>
+        <div class="home_mobile_fave_ideas_list">
+          <div class="home_mobile_join_pintrest">
+            <img
+              src="https://res.cloudinary.com/dxqm2evux/image/upload/v1764062977/search-by-skin-tone-2x-0c602edb_iknnon.png"
+              alt="image demonstrating Pinterest's skin tone search feature"
+            />
+            <h3 class="home_mobile_join_title">Search by skin tone</h3>
+            <p class="home_mobile_join_descr">
+              Search with skin tone ranges for beauty ideas that represent you
+            </p>
+            <button type="button" class="join_btn">Join Pinterest</button>
+          </div>
 
-        <button class="logInGoogle">Continue By Google</button>
-        <button class="logInQr">Use QR code</button>
+          <div class="home_mobile_join_pintrest">
+            <img
+              src="https://res.cloudinary.com/dxqm2evux/image/upload/v1764064515/group-boards-2px-0d493529_buzax2.png"
+              alt="Pinterest group boards interface showing an earthy space inspiration board"
+            />
+            <h3 class="home_mobile_join_title">
+              Collaborate with group boards
+            </h3>
+            <p class="home_mobile_join_descr">
+              Visualize your ideas with others, using a Pinterest account
+            </p>
+            <button type="button" class="join_btn">Join Pinterest</button>
+          </div>
 
-        <p>
-          By continuing, you agree to Pintrest`s
-          <span>Terms of Service </span> and acknowledge you`ve read our
-          <span>Privacy policy . Notice at collecton</span>
-        </p>
-      </form>
+          <div class="home_mobile_join_pintrest">
+            <img
+              src="https://res.cloudinary.com/dxqm2evux/image/upload/v1764064520/visual-search-2px-91066f59_gkloii.png"
+              alt="photo of woman in cherry top and blue skirt"
+            />
+            <h3 class="home_mobile_join_title">Search visually with images</h3>
+            <p class="home_mobile_join_descr">
+              Search objects within an image to find more styles you’ll love
+            </p>
+            <button type="button" class="join_btn">Join Pinterest</button>
+          </div>
+        </div>
+      </section>
+      <!-- mobile fave ideas section -->
+
+      <!-- mobile sign up -->
+
+      <section class="home_mobile_header">
+        <form
+          action="/signup"
+          method="post"
+          class="home_mobile_signup home_mobile_signup2"
+        >
+          <img
+            src="https://res.cloudinary.com/dxqm2evux/image/upload/v1763982915/pinterest_lkvn9r.png"
+            alt="Pinterest Logo"
+          />
+          <h1>
+            Sign up to explore the
+            <br />
+            world's best ideas
+          </h1>
+
+          <div class="home_mobile_btn_signup">
+            <button href="#" class="btn_signup email">
+              <p>Continue with email</p>
+            </button>
+          </div>
+
+          <div class="home_mobile_btn_signup">
+            <button href="#" class="btn_signup">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-chromium-icon lucide-chromium"
+              >
+                <path d="M10.88 21.94 15.46 14" />
+                <path d="M21.17 8H12" />
+                <path d="M3.95 6.06 8.54 14" />
+                <circle cx="12" cy="12" r="10" />
+                <circle cx="12" cy="12" r="4" />
+              </svg>
+              <p>Continue with Google</p>
+            </button>
+          </div>
+
+          <a href="#" class="options_register">Already member?Log in</a>
+          <br />
+          <a href="#" class="options_register start"
+            >Are you a business? Get a started here</a
+          >
+
+          <div class="terms_of_serv">
+            <p>
+              By continuing, you agree to Pinterest's
+              <a href="/tos">Terms of Service </a> and acknowledge you've read
+              our
+              <a href="/privacy">Privacy policy and Notice at Collection</a>
+            </p>
+          </div>
+          <div class="download_appstore">
+            <img
+              src="https://res.cloudinary.com/dxqm2evux/image/upload/v1764180742/applepng.parspng.com-3_jji601.png"
+              alt="logo of download on the app store"
+            />
+          </div>
+        </form>
+      </section>
+      <!-- mobile sign up -->
+      <!-- mobile footer -->
+      <footer class="mobile_footer">
+        <div class="logo_footer">
+          <img
+            src="https://res.cloudinary.com/dxqm2evux/image/upload/v1764873233/icons8-pinterest-32_skml8h.png"
+            alt="Pinterest logo"
+          />
+        </div>
+        <div class="first_section_footer">
+          <div class="footer_links">
+            <p>Get the app</p>
+            <ul>
+              <li><a href="#">iOS</a></li>
+              <li><a href="#">Android</a></li>
+            </ul>
+          </div>
+          <div class="footer_links">
+            <p>Policies</p>
+            <ul>
+              <li><a href="#">Terms of service</a></li>
+              <li><a href="#">Privacy policy</a></li>
+              <li><a href="#">Non-user notice</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="second_section_footer">
+          <div class="footer_links">
+            <p>Quick links</p>
+            <ul>
+              <li><a href="#">Explore</a></li>
+              <li><a href="#">Shop</a></li>
+              <li><a href="#">Users</a></li>
+              <li><a href="#">Collections</a></li>
+              <li><a href="#">Shopping</a></li>
+              <li><a href="#">Help Center</a></li>
+              <li><a href="#">© 2025 Pinterest</a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
     </div>
-    <!-- Login Page -->
 
-    <!-- Inspitation -->
-    <div class="inspirationPages">
-      <p>Get your next</p>
-      <p>green thumb idea</p>
-    </div>
-    <!-- Inspitation -->
+    <!-- mobile footer -->
 
-    <!-- Search -->
-    <div class="searchPages">
-      <div class="searchPagesSec1"></div>
-
-      <div class="searchPagesSec2">
-        <p>Search for an idea</p>
-        <p>
-          What do you want to try next? Think of something you’re into—like
-          “easy chicken dinner”—and see what you find.
-        </p>
-
-        <button class="exploreBtn redBtn">Explore</button>
-        
-    </div>
-    <!-- Search -->
-
-
-    <!-- save ideas page -->
-     <div class="saveIdeasPage">
-      <div class="saveDetail">
-        <p>Save ideas you like</p>
-        <p>Collect your favorites so you can get back to them later.</p>
-        <button class="exploreBtn redbtn">Explore</button>
-      </div>
-   <div class="saveCollection">
-    <div class="colList1">
-    <div class="col1">
-      <p>Fern future home vibes</p>
-      <div class="colImg">
-        <img src="./media/colImg1.png" alt="">
-        <img src="./media/colImg2.png" alt="">
-        <img src="./media/colImg3.png" alt="">
-      </div>
-    </div>
-      <div class="col2">
-      <p>Serve my drinks in style</p>
-    </div>
-    </div>
-    <div class="colList2">
-    <div class="col3">
-      <p>My Scandinavian bedroom</p>
-    </div>
-      <div class="col4">
-      <p>The deck of my dreams</p>
-    </div>
-      <div class="col5">
-      <p>Our bathroom</p>
-    </div>
-   </div>
-     </div>
-    <!-- save ideas page -->
-<!-- shop -->
- <div class="shopPage">
-  <div class="shopSect1">
-    <div class="img1">
-      <img src="./media/shop.png" alt="">
-    </div>
-    <div class="img2">
-      <img src="./media/shopStory.png" alt="">
-
-    </div>
-    <div class="img3">
-      <img src="./media/shopAvator.png" alt="">
-    </div>
-    <div class="text">
-      <p>Scout the City</p>
-      <p>56.7k followers</p>
-    </div>
-  </div>
-  <div class="shopSect2">
-    <p>See it,make it,try it, do it</p>
-    <p>The best part of Pinterest is discovering new things and ideas from people around the world</p>
-  
-    <button class="exploreBtn redbtn">Explore</button>
-  </div>
- </div>
- <!-- shop -->
-  <!-- footer -->
-   <div class="footer">
-    <ul>
-      <li><a href="#">Terms of Service</a></li>
-      <li><a href="#">Privacy Policy</a></li>
-      <li><a href="#">Help</a></li>
-      <li><a href="#">Iphone App</a></li>
-      <li><a href="#">Android App</a></li>
-      <li><a href="#">Users</a></li>
-      <li><a href="#">Collections</a></li>
-      <li><a href="#">Shopping</a></li>
-      <li><a href="#">Explore</a></li>
-      <li><a href="#">Shop</a></li>
-      <li><a href="#">Non-User Notice</a></li>
-    </ul>
-   </div>
-   <!-- footer -->
+    <!-- mobile -->
   </body>
 </html>

@@ -1,0 +1,1034 @@
+/* mobile */
+.desktop-explore {
+  display: none !important;
+}
+/* header mobile */
+.header_mobile_explore {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.062);
+  background-color: white;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
+.header_mobile_logo {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.header_mobile_logo img {
+  width: 35px;
+}
+.description_logo a {
+  font-weight: 600;
+  font-size: 18px;
+}
+.description_logo p {
+  font-size: 12px;
+  color: #555454;
+}
+.explore_btn_sign {
+  background-color: var(--main-red);
+  padding: 10px;
+  border-radius: 12px;
+  margin-right: 10px;
+  color: white;
+  font-weight: 600;
+  font-size: 13px;
+  margin-left: 7px;
+}
+/* header mobile */
+
+/* explore for Pinterest  mobile */
+.explore_best {
+  width: 100%;
+  margin-top: 62px;
+  padding-top: 20px;
+}
+.explore_btn {
+  width: 55px;
+  height: 30px;
+  padding-top: 5px;
+  text-align: center;
+  border-bottom: 3px solid black;
+  margin-left: 20px;
+  cursor: pointer;
+}
+.explore_btn p {
+  font-size: 15px;
+  font-weight: 500;
+}
+.explore_best h2 {
+  margin-top: 30px;
+  padding-left: 15px;
+  font-size: 25px;
+}
+.explore_images {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 8px;
+  margin-top: 35px;
+}
+.explore_card1 {
+  background: url(https://res.cloudinary.com/dxqm2evux/image/upload/v1761476271/pasta_uy394n.jpg)
+    center no-repeat;
+  background-size: cover;
+}
+.explore_card2 {
+  background: url(https://res.cloudinary.com/dxqm2evux/image/upload/v1759044837/Eleganze_slp9mf.jpg)
+    center no-repeat;
+  background-size: cover;
+}
+
+.explore_card3 {
+  background: url(https://res.cloudinary.com/dxqm2evux/image/upload/v1759044821/toastFood_qil6pd.jpg)
+    center no-repeat;
+  background-size: cover;
+  display: none !important;
+}
+.card {
+  position: relative;
+  border-radius: 30px;
+  width: 351px;
+  height: 263px;
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  padding-bottom: 20px;
+  overflow: hidden;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 32px;
+  background-color: rgba(23, 23, 23, 0.479);
+  z-index: 1;
+}
+
+.card:hover::before {
+  background-color: rgba(0, 0, 0, 0.411);
+}
+.card p {
+  font-size: 16px;
+}
+.card h3 {
+  margin: 0 auto;
+  font-size: 28px;
+  width: 300px;
+}
+.card p,
+.card h3 {
+  position: relative;
+  z-index: 2;
+}
+.seemore_btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.seemore_btn a {
+  display: inline-block;
+  width: 115px;
+  height: 50px;
+  padding: 15px 17px;
+  margin: 20px 0;
+  background-color: #e5e5e0;
+  border-radius: 16px;
+  font-weight: 600;
+  color: black;
+  text-align: center;
+}
+.seemore_btn a:hover {
+  background-color: #d6d6d4;
+}
+/* explore for Pinterest mobile */
+
+/*  Browse by category */
+.hidden {
+  display: none !important;
+}
+.category_card {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+.explore_category h2 {
+  margin-top: 30px;
+  margin-left: 20px;
+  font-size: 14px;
+}
+
+.images {
+  width: 170px;
+  height: 82px;
+  border-radius: 16px;
+  position: relative;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+.images::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+  background-color: rgba(23, 23, 23, 0.415);
+  z-index: 1;
+}
+.images h3 {
+  position: relative;
+  font-size: 14px;
+  z-index: 2;
+}
+.images:hover::before {
+  background-color: rgba(0, 0, 0, 0.568);
+}
+.category_img1 {
+  background: url("https://res.cloudinary.com/dxqm2evux/image/upload/v1759052882/dog_hqhany.png")
+    center no-repeat;
+  background-size: cover;
+}
+
+.category_img2 {
+  background: url("https://res.cloudinary.com/dxqm2evux/image/upload/v1759052880/art_woy1ej.png")
+    center no-repeat;
+  background-size: cover;
+}
+
+.category_img3 {
+  background: url("https://res.cloudinary.com/dxqm2evux/image/upload/v1759052873/beauty_b1sofd.png")
+    center no-repeat;
+  background-size: cover;
+}
+
+.category_img4 {
+  background: url("https://res.cloudinary.com/dxqm2evux/image/upload/v1759052870/design_df3put.png")
+    center no-repeat;
+  background-size: cover;
+}
+
+.category_img5 {
+  background: url("https://res.cloudinary.com/dxqm2evux/image/upload/v1759052882/crafts_hu1nsv.png")
+    center no-repeat;
+  background-size: cover;
+}
+
+.category_img6 {
+  background: url("https://res.cloudinary.com/dxqm2evux/image/upload/v1759052880/food_kzqgx2.png")
+    center no-repeat;
+  background-size: cover;
+}
+
+.category_img7 {
+  background: url("https://res.cloudinary.com/dxqm2evux/image/upload/v1759052876/decor_ojiybo.png")
+    center no-repeat;
+  background-size: cover;
+}
+
+.category_img8 {
+  background: url("https://res.cloudinary.com/dxqm2evux/image/upload/v1759052874/fashion_ke3nfs.png")
+    center no-repeat;
+  background-size: cover;
+}
+
+.category_img9 {
+  background: url("https://res.cloudinary.com/dxqm2evux/image/upload/v1759052873/quotes_pwz0na.png")
+    center no-repeat;
+  background-size: cover;
+}
+
+.category_img10 {
+  background: url("https://res.cloudinary.com/dxqm2evux/image/upload/v1759052873/tattoos_tqvoq9.png")
+    center no-repeat;
+  background-size: cover;
+}
+/*  Browse by category */
+
+/* new on Pinterest */
+.explore_new h2 {
+  margin-top: 50px;
+  margin-left: 15px;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.explore_posts {
+  width: 100%;
+  padding: 0 10px;
+  column-count: 2;
+  column-gap: 10px;
+}
+.post {
+  width: 100%;
+  margin-bottom: 10px;
+  break-inside: avoid;
+  border-radius: 16px;
+  overflow: hidden;
+  display: block;
+}
+
+.image_wrapper {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 16px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: 16px;
+  cursor: pointer;
+}
+.image_wrapper:hover .overlay {
+  opacity: 1;
+}
+
+.open {
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.download_btn {
+  position: absolute;
+  bottom: 8px;
+  right: 15px;
+  background-color: white;
+  padding: 3px 4px;
+  border-radius: 8px;
+  border: none;
+}
+.download_btn svg {
+  width: 18px;
+  height: 18px;
+}
+
+.visit_site {
+  background-color: #ffffff;
+  border: none;
+  border-radius: 13px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 5px;
+  padding: 3px 8px;
+  position: absolute;
+  bottom: 13px;
+  left: 10px;
+  cursor: pointer;
+}
+.visit_site svg {
+  width: 14px;
+}
+.visit_site p {
+  font-size: 12px;
+}
+
+.image_wrapper img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.tag-bar {
+  display: none;
+}
+
+.post_description {
+  padding: 12px 16px;
+  position: relative;
+  min-height: fit-content;
+}
+.post_description p {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 0;
+  position: relative;
+  padding-right: 30px;
+  font-size: 10px;
+  font-weight: 600;
+}
+.post_description span {
+  display: none;
+}
+
+.more-action {
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  position: absolute;
+  top: 8px;
+  right: 14px;
+  background: transparent;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 4px;
+  line-height: 1;
+  color: #070707;
+}
+.more-action:hover {
+  background-color: #d6d6d47a;
+}
+.more-action:focus {
+  outline: 2px solid #868686;
+  outline-offset: 2px;
+}
+/* footer mobile */
+.footer_mobile {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  text-align: center;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  bottom: 0;
+  z-index: 1000;
+}
+.footer_mobile svg {
+  width: 24px;
+  height: 24px;
+}
+.footer_svg2 {
+  color: rgb(120, 120, 120);
+}
+.footer_svg3 {
+  color: rgb(120, 120, 120);
+}
+/* footer mobile */
+
+/* mobile */
+
+@media (min-width: 1024px) {
+  /* Header */
+
+  .desktop-explore {
+    display: block !important;
+  }
+  .header_mobile_explore {
+    display: none;
+  }
+  .header_searchBox {
+    position: relative;
+    flex: 1;
+    margin-left: 20px;
+  }
+
+  .header_searchBox input {
+    width: 100%;
+    padding: 12px 40px;
+    border-radius: 32px;
+    border: none;
+    background-color: #f1f1f1;
+    font-size: 15px;
+  }
+
+  .header_searchBox svg {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    width: 20px;
+    color: #5f5f5f;
+  }
+
+  .header_searchBox input::placeholder {
+    color: #6e6e6e;
+  }
+
+  .explore_btn_log {
+    background-color: #e5e5e0;
+    padding: 12px 14px;
+    border-radius: 16px;
+    font-weight: 500;
+    margin-left: 12px;
+  }
+
+  .explore_btn_sign {
+    background-color: var(--main-red);
+    padding: 12px 14px;
+    border-radius: 16px;
+    color: white;
+    font-weight: 500;
+    margin-left: 7px;
+  }
+
+  /* header */
+
+  /* explore for Pinterest  mobile */
+  .explore_best {
+    width: 100%;
+    margin-top: 62px;
+    padding-top: 20px;
+  }
+  .explore_btn {
+    display: none;
+  }
+
+  .explore_best h2 {
+    margin-top: 30px;
+    padding-left: 120px;
+    font-size: 35px;
+  }
+  .explore_images {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 8px;
+    margin-top: 35px;
+  }
+  .explore_card1 {
+    background: url(https://res.cloudinary.com/dxqm2evux/image/upload/v1761476271/pasta_uy394n.jpg)
+      center no-repeat;
+    background-size: cover;
+  }
+  .explore_card2 {
+    background: url(https://res.cloudinary.com/dxqm2evux/image/upload/v1759044837/Eleganze_slp9mf.jpg)
+      center no-repeat;
+    background-size: cover;
+  }
+
+  .explore_card3 {
+    background: url(https://res.cloudinary.com/dxqm2evux/image/upload/v1759044821/toastFood_qil6pd.jpg)
+      center no-repeat;
+    background-size: cover;
+    display: block !important;
+  }
+  .card {
+    position: relative;
+    border-radius: 30px;
+    width: 416px;
+    height: 300px;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    padding-bottom: 20px;
+    overflow: hidden;
+  }
+
+  .card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 32px;
+    background-color: rgba(23, 23, 23, 0.479);
+    z-index: 1;
+  }
+
+  .card:hover::before {
+    background-color: rgba(0, 0, 0, 0.411);
+  }
+  .card p {
+    font-size: 16px;
+  }
+  .card h3 {
+    margin: 0 auto;
+    font-size: 28px;
+    width: 300px;
+  }
+  .card p,
+  .card h3 {
+    position: relative;
+    z-index: 2;
+  }
+  .seemore_btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .seemore_btn a {
+    display: inline-block;
+    width: 115px;
+    height: 50px;
+    padding: 15px 17px;
+    margin: 20px 0;
+    background-color: #e5e5e0;
+    border-radius: 16px;
+    font-weight: 600;
+    color: black;
+    text-align: center;
+  }
+  .seemore_btn a:hover {
+    background-color: #d6d6d4;
+  }
+  /* explore for Pinterest mobile */
+
+  /*  Browse by category */
+  .hidden {
+    display: flex !important;
+  }
+  .category_card {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  .explore_category h2 {
+    margin-top: 50px;
+    margin-left: 120px;
+    font-size: 27px;
+  }
+
+  .images {
+    width: 240px;
+    height: 120px;
+    border-radius: 16px;
+    position: relative;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+  .images::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+    background-color: rgba(23, 23, 23, 0.415);
+    z-index: 1;
+  }
+  .images h3 {
+    position: relative;
+    font-size: 20px;
+    z-index: 2;
+  }
+  .images:hover::before {
+    background-color: rgba(0, 0, 0, 0.568);
+  }
+  .category_img1 {
+    background: url("https://res.cloudinary.com/dxqm2evux/image/upload/v1759052882/dog_hqhany.png")
+      center no-repeat;
+    background-size: cover;
+  }
+
+  .category_img2 {
+    background: url("https://res.cloudinary.com/dxqm2evux/image/upload/v1759052880/art_woy1ej.png")
+      center no-repeat;
+    background-size: cover;
+  }
+
+  .category_img3 {
+    background: url("https://res.cloudinary.com/dxqm2evux/image/upload/v1759052873/beauty_b1sofd.png")
+      center no-repeat;
+    background-size: cover;
+  }
+
+  .category_img4 {
+    background: url("https://res.cloudinary.com/dxqm2evux/image/upload/v1759052870/design_df3put.png")
+      center no-repeat;
+    background-size: cover;
+  }
+
+  .category_img5 {
+    background: url("https://res.cloudinary.com/dxqm2evux/image/upload/v1759052882/crafts_hu1nsv.png")
+      center no-repeat;
+    background-size: cover;
+  }
+
+  .category_img6 {
+    background: url("https://res.cloudinary.com/dxqm2evux/image/upload/v1759052880/food_kzqgx2.png")
+      center no-repeat;
+    background-size: cover;
+  }
+
+  .category_img7 {
+    background: url("https://res.cloudinary.com/dxqm2evux/image/upload/v1759052876/decor_ojiybo.png")
+      center no-repeat;
+    background-size: cover;
+  }
+
+  .category_img8 {
+    background: url("https://res.cloudinary.com/dxqm2evux/image/upload/v1759052874/fashion_ke3nfs.png")
+      center no-repeat;
+    background-size: cover;
+  }
+
+  .category_img9 {
+    background: url("https://res.cloudinary.com/dxqm2evux/image/upload/v1759052873/quotes_pwz0na.png")
+      center no-repeat;
+    background-size: cover;
+  }
+
+  .category_img10 {
+    background: url("https://res.cloudinary.com/dxqm2evux/image/upload/v1759052873/tattoos_tqvoq9.png")
+      center no-repeat;
+    background-size: cover;
+  }
+
+  /*  Browse by category */
+
+  /*explore featured boards */
+
+  .section_title {
+    font-size: 25px;
+    margin: 20px 0 20px 160px;
+  }
+  .explore_fit {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 30px;
+    max-width: 1270px;
+    margin: 0 auto;
+  }
+
+  .boards_Img {
+    width: 231px;
+    height: 150px;
+    position: relative;
+  }
+
+  .boards_Img::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 16px;
+  }
+
+  .boards_Img:hover::after {
+    opacity: 1;
+  }
+
+  .fit_boards img {
+    object-fit: cover;
+    object-position: center;
+  }
+  .fit_img1 {
+    width: 150px;
+    height: 150px;
+    border-radius: 16px 0 0 16px;
+  }
+  .fit_img2 {
+    width: 76px;
+    height: 75px;
+    border-radius: 0 0 16px 0;
+  }
+  .fit_img3 {
+    width: 76px;
+    height: 74px;
+    position: absolute;
+    top: 0px;
+    right: 1px;
+    border-radius: 0 16px 0 0;
+  }
+  .boardDesc {
+    margin-left: 10px;
+  }
+  .boardDesc h2 {
+    font-size: 15px;
+    margin: 7px 0;
+    width: 210px;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+  }
+
+  .thick_svg {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 5px;
+    font-size: 11px;
+  }
+  .red_svg_thick {
+    background-color: var(--main-red);
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    color: #e5e5e0;
+  }
+  .blue_svg_thick {
+    background-color: #435ee5;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    color: #e5e5e0;
+  }
+  .number_pins {
+    margin-top: 7px;
+    color: rgb(109, 109, 109);
+    font-size: 11px;
+  }
+  /*explore featured boards */
+
+  /* new on Pinterest */
+
+  .explore_new h2 {
+    margin-top: 50px;
+    margin-left: 10px;
+    font-size: 27px;
+    margin-bottom: 20px;
+  }
+
+  .explore_posts {
+    width: 100%;
+    padding: 0 10px;
+    column-count: 5;
+    column-gap: 20px;
+  }
+  .explore_new {
+    padding: 0 110px;
+  }
+  .post {
+    width: 240px;
+    margin-bottom: 10px;
+    break-inside: avoid;
+    border-radius: 16px;
+    overflow: hidden;
+    display: block;
+  }
+
+  .image_wrapper {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 16px;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 16px;
+    cursor: pointer;
+  }
+  .image_wrapper:hover .overlay {
+    opacity: 1;
+  }
+
+  .open {
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .download_btn {
+    position: absolute;
+    bottom: 6px;
+    right: 15px;
+    background-color: white;
+    padding: 5px 6px;
+    border-radius: 8px;
+    border: none;
+  }
+  .download_btn svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .visit_site {
+    background-color: #ffffff;
+    border: none;
+    border-radius: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 5px;
+    padding: 4px 9px;
+    position: absolute;
+    bottom: 13px;
+    left: 10px;
+    cursor: pointer;
+  }
+  .visit_site svg {
+    width: 16px;
+  }
+  .visit_site p {
+    font-size: 14px;
+  }
+
+  .image_wrapper img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .tag-bar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 8px 25px 8px 0;
+  }
+  .tags {
+    display: flex;
+    gap: 6px;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+  .tags::-webkit-scrollbar {
+    display: none;
+  }
+  .tags a {
+    flex-shrink: 0;
+    background: #e5e5e0;
+    color: #111;
+    font-weight: 700;
+    padding: 5px 10px;
+    font-size: 12px;
+    border-radius: 16px;
+    text-decoration: none;
+    white-space: nowrap;
+  }
+  .tags a:hover {
+    color: #5f5f5f;
+    text-decoration: underline;
+  }
+
+  .arrow {
+    position: absolute;
+    right: 6px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #5c5b5b;
+    z-index: 3;
+    width: 20px;
+    font-weight: 200;
+    border-radius: 50%;
+  }
+
+  .fade-right {
+    position: absolute;
+    right: 10px;
+    top: 2px;
+    height: 30px;
+    width: 60px;
+    pointer-events: none;
+    background: linear-gradient(to left, #ffffff 40%, rgba(255, 255, 255, 0));
+    z-index: 2;
+  }
+  .post_description {
+    padding: 12px 16px;
+    position: relative;
+    min-height: fit-content;
+  }
+  .post_description p {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 0;
+    position: relative;
+    padding-right: 30px;
+    font-size: 13px;
+    font-weight: 600;
+  }
+  .post_description span {
+    display: none;
+  }
+
+  .more-action {
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    position: absolute;
+    top: 8px;
+    right: 14px;
+    background: transparent;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 4px;
+    line-height: 1;
+    color: #070707;
+  }
+  .more-action:hover {
+    background-color: #d6d6d47a;
+  }
+  .more-action:focus {
+    outline: 2px solid #868686;
+    outline-offset: 2px;
+  }
+  /* new on Pinterest */
+
+  .footer_mobile {
+    display: none;
+  }
+}
+/* new on Pinterest */
